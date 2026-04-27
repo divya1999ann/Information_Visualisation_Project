@@ -1,0 +1,145 @@
+year,sector,hazardousness,waste_thousand_tonnes
+2004,Agriculture & Fishing,Hazardous,0.0
+2004,Agriculture & Fishing,Non-Hazardous,8.7
+2004,Construction,Hazardous,0.0
+2004,Construction,Non-Hazardous,11286.9
+2004,Electricity & Gas,Hazardous,1.7
+2004,Electricity & Gas,Non-Hazardous,284.8
+2004,Households,Hazardous,0.1
+2004,Households,Non-Hazardous,1702.2
+2004,Manufacturing,Hazardous,257.1
+2004,Manufacturing,Non-Hazardous,5099.2
+2004,Mining & Quarrying,Hazardous,1.1
+2004,Mining & Quarrying,Non-Hazardous,4048.3
+2004,Services,Hazardous,21.0
+2004,Services,Non-Hazardous,1162.7
+2004,Water & Waste Mgmt,Hazardous,0.0
+2004,Water & Waste Mgmt,Non-Hazardous,0.0
+2006,Agriculture & Fishing,Hazardous,0.0
+2006,Agriculture & Fishing,Non-Hazardous,0.0
+2006,Construction,Hazardous,77.2
+2006,Construction,Non-Hazardous,16522.3
+2006,Electricity & Gas,Hazardous,13.4
+2006,Electricity & Gas,Non-Hazardous,333.3
+2006,Households,Hazardous,0.0
+2006,Households,Non-Hazardous,1978.7
+2006,Manufacturing,Hazardous,248.6
+2006,Manufacturing,Non-Hazardous,3818.7
+2006,Mining & Quarrying,Hazardous,9.9
+2006,Mining & Quarrying,Non-Hazardous,4755.6
+2006,Services,Hazardous,0.0
+2006,Services,Non-Hazardous,1327.1
+2006,Water & Waste Mgmt,Hazardous,0.0
+2006,Water & Waste Mgmt,Non-Hazardous,0.0
+2008,Agriculture & Fishing,Hazardous,0.0
+2008,Agriculture & Fishing,Non-Hazardous,19.4
+2008,Construction,Hazardous,26.0
+2008,Construction,Non-Hazardous,13521.6
+2008,Electricity & Gas,Hazardous,1.8
+2008,Electricity & Gas,Non-Hazardous,290.0
+2008,Households,Hazardous,0.0
+2008,Households,Non-Hazardous,1677.3
+2008,Manufacturing,Hazardous,244.9
+2008,Manufacturing,Non-Hazardous,3780.8
+2008,Mining & Quarrying,Hazardous,3.7
+2008,Mining & Quarrying,Non-Hazardous,2057.6
+2008,Services,Hazardous,0.0
+2008,Services,Non-Hazardous,1477.4
+2008,Water & Waste Mgmt,Hazardous,0.0
+2008,Water & Waste Mgmt,Non-Hazardous,0.0
+2010,Agriculture & Fishing,Hazardous,34.4
+2010,Agriculture & Fishing,Non-Hazardous,66.7
+2010,Construction,Hazardous,8.1
+2010,Construction,Non-Hazardous,1601.6
+2010,Electricity & Gas,Hazardous,6.0
+2010,Electricity & Gas,Non-Hazardous,327.7
+2010,Households,Hazardous,57.6
+2010,Households,Non-Hazardous,1672.4
+2010,Manufacturing,Hazardous,337.9
+2010,Manufacturing,Non-Hazardous,2921.2
+2010,Mining & Quarrying,Hazardous,3.3
+2010,Mining & Quarrying,Non-Hazardous,2192.4
+2010,Services,Hazardous,0.2
+2010,Services,Non-Hazardous,140.5
+2010,Water & Waste Mgmt,Hazardous,604.3
+2010,Water & Waste Mgmt,Non-Hazardous,2799.5
+2012,Agriculture & Fishing,Hazardous,23.2
+2012,Agriculture & Fishing,Non-Hazardous,73.1
+2012,Construction,Hazardous,1.8
+2012,Construction,Non-Hazardous,1130.5
+2012,Electricity & Gas,Hazardous,0.8
+2012,Electricity & Gas,Non-Hazardous,374.0
+2012,Households,Hazardous,54.1
+2012,Households,Non-Hazardous,1602.6
+2012,Manufacturing,Hazardous,240.8
+2012,Manufacturing,Non-Hazardous,3747.8
+2012,Mining & Quarrying,Hazardous,1.3
+2012,Mining & Quarrying,Non-Hazardous,2083.4
+2012,Services,Hazardous,146.5
+2012,Services,Non-Hazardous,1295.4
+2012,Water & Waste Mgmt,Hazardous,10.3
+2012,Water & Waste Mgmt,Non-Hazardous,1927.2
+2014,Agriculture & Fishing,Hazardous,23.2
+2014,Agriculture & Fishing,Non-Hazardous,73.1
+2014,Construction,Hazardous,4.1
+2014,Construction,Non-Hazardous,1880.3
+2014,Electricity & Gas,Hazardous,1.9
+2014,Electricity & Gas,Non-Hazardous,319.1
+2014,Households,Hazardous,68.7
+2014,Households,Non-Hazardous,1455.7
+2014,Manufacturing,Hazardous,230.1
+2014,Manufacturing,Non-Hazardous,3238.0
+2014,Mining & Quarrying,Hazardous,20.5
+2014,Mining & Quarrying,Non-Hazardous,2686.1
+2014,Services,Hazardous,103.0
+2014,Services,Non-Hazardous,2022.8
+2014,Water & Waste Mgmt,Hazardous,31.3
+2014,Water & Waste Mgmt,Non-Hazardous,3002.5
+2016,Agriculture & Fishing,Hazardous,24.9
+2016,Agriculture & Fishing,Non-Hazardous,80.1
+2016,Construction,Hazardous,42.3
+2016,Construction,Non-Hazardous,1479.3
+2016,Electricity & Gas,Hazardous,1.8
+2016,Electricity & Gas,Non-Hazardous,315.1
+2016,Households,Hazardous,33.2
+2016,Households,Non-Hazardous,1480.4
+2016,Manufacturing,Hazardous,326.7
+2016,Manufacturing,Non-Hazardous,4958.6
+2016,Mining & Quarrying,Hazardous,2.0
+2016,Mining & Quarrying,Non-Hazardous,2396.5
+2016,Services,Hazardous,90.3
+2016,Services,Non-Hazardous,1936.8
+2016,Water & Waste Mgmt,Hazardous,12.8
+2016,Water & Waste Mgmt,Non-Hazardous,2070.5
+2018,Agriculture & Fishing,Hazardous,25.4
+2018,Agriculture & Fishing,Non-Hazardous,271.4
+2018,Construction,Hazardous,14.7
+2018,Construction,Non-Hazardous,1888.4
+2018,Electricity & Gas,Hazardous,1.7
+2018,Electricity & Gas,Non-Hazardous,148.1
+2018,Households,Hazardous,80.3
+2018,Households,Non-Hazardous,1510.9
+2018,Manufacturing,Hazardous,277.7
+2018,Manufacturing,Non-Hazardous,3170.3
+2018,Mining & Quarrying,Hazardous,1.1
+2018,Mining & Quarrying,Non-Hazardous,1980.5
+2018,Services,Hazardous,118.6
+2018,Services,Non-Hazardous,3003.1
+2018,Water & Waste Mgmt,Hazardous,110.9
+2018,Water & Waste Mgmt,Non-Hazardous,1382.7
+2020,Agriculture & Fishing,Hazardous,25.8
+2020,Agriculture & Fishing,Non-Hazardous,249.6
+2020,Construction,Hazardous,19.2
+2020,Construction,Non-Hazardous,5259.1
+2020,Electricity & Gas,Hazardous,38.0
+2020,Electricity & Gas,Non-Hazardous,120.1
+2020,Households,Hazardous,112.3
+2020,Households,Non-Hazardous,1829.4
+2020,Manufacturing,Hazardous,360.0
+2020,Manufacturing,Non-Hazardous,3261.1
+2020,Mining & Quarrying,Hazardous,0.8
+2020,Mining & Quarrying,Non-Hazardous,1516.8
+2020,Services,Hazardous,110.9
+2020,Services,Non-Hazardous,1249.3
+2020,Water & Waste Mgmt,Hazardous,219.5
+2020,Water & Waste Mgmt,Non-Hazardous,1818.4

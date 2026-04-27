@@ -1,0 +1,1108 @@
+{
+  "generation": [
+    {
+      "year": 2004,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2004,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 8.7
+    },
+    {
+      "year": 2004,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2004,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 11286.9
+    },
+    {
+      "year": 2004,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.7
+    },
+    {
+      "year": 2004,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 284.8
+    },
+    {
+      "year": 2004,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.1
+    },
+    {
+      "year": 2004,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1702.2
+    },
+    {
+      "year": 2004,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 257.1
+    },
+    {
+      "year": 2004,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 5099.2
+    },
+    {
+      "year": 2004,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.1
+    },
+    {
+      "year": 2004,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 4048.3
+    },
+    {
+      "year": 2004,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 21.0
+    },
+    {
+      "year": 2004,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1162.7
+    },
+    {
+      "year": 2004,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2004,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 77.2
+    },
+    {
+      "year": 2006,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 16522.3
+    },
+    {
+      "year": 2006,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 13.4
+    },
+    {
+      "year": 2006,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 333.3
+    },
+    {
+      "year": 2006,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1978.7
+    },
+    {
+      "year": 2006,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 248.6
+    },
+    {
+      "year": 2006,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3818.7
+    },
+    {
+      "year": 2006,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 9.9
+    },
+    {
+      "year": 2006,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 4755.6
+    },
+    {
+      "year": 2006,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1327.1
+    },
+    {
+      "year": 2006,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2006,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2008,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2008,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 19.4
+    },
+    {
+      "year": 2008,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 26.0
+    },
+    {
+      "year": 2008,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 13521.6
+    },
+    {
+      "year": 2008,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.8
+    },
+    {
+      "year": 2008,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 290.0
+    },
+    {
+      "year": 2008,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2008,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1677.3
+    },
+    {
+      "year": 2008,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 244.9
+    },
+    {
+      "year": 2008,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3780.8
+    },
+    {
+      "year": 2008,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 3.7
+    },
+    {
+      "year": 2008,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2057.6
+    },
+    {
+      "year": 2008,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2008,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1477.4
+    },
+    {
+      "year": 2008,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2008,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 0.0
+    },
+    {
+      "year": 2010,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 34.4
+    },
+    {
+      "year": 2010,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 66.7
+    },
+    {
+      "year": 2010,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 8.1
+    },
+    {
+      "year": 2010,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1601.6
+    },
+    {
+      "year": 2010,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 6.0
+    },
+    {
+      "year": 2010,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 327.7
+    },
+    {
+      "year": 2010,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 57.6
+    },
+    {
+      "year": 2010,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1672.4
+    },
+    {
+      "year": 2010,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 337.9
+    },
+    {
+      "year": 2010,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2921.2
+    },
+    {
+      "year": 2010,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 3.3
+    },
+    {
+      "year": 2010,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2192.4
+    },
+    {
+      "year": 2010,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.2
+    },
+    {
+      "year": 2010,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 140.5
+    },
+    {
+      "year": 2010,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 604.3
+    },
+    {
+      "year": 2010,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2799.5
+    },
+    {
+      "year": 2012,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 23.2
+    },
+    {
+      "year": 2012,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 73.1
+    },
+    {
+      "year": 2012,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.8
+    },
+    {
+      "year": 2012,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1130.5
+    },
+    {
+      "year": 2012,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.8
+    },
+    {
+      "year": 2012,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 374.0
+    },
+    {
+      "year": 2012,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 54.1
+    },
+    {
+      "year": 2012,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1602.6
+    },
+    {
+      "year": 2012,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 240.8
+    },
+    {
+      "year": 2012,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3747.8
+    },
+    {
+      "year": 2012,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.3
+    },
+    {
+      "year": 2012,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2083.4
+    },
+    {
+      "year": 2012,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 146.5
+    },
+    {
+      "year": 2012,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1295.4
+    },
+    {
+      "year": 2012,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 10.3
+    },
+    {
+      "year": 2012,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1927.2
+    },
+    {
+      "year": 2014,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 23.2
+    },
+    {
+      "year": 2014,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 73.1
+    },
+    {
+      "year": 2014,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 4.1
+    },
+    {
+      "year": 2014,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1880.3
+    },
+    {
+      "year": 2014,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.9
+    },
+    {
+      "year": 2014,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 319.1
+    },
+    {
+      "year": 2014,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 68.7
+    },
+    {
+      "year": 2014,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1455.7
+    },
+    {
+      "year": 2014,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 230.1
+    },
+    {
+      "year": 2014,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3238.0
+    },
+    {
+      "year": 2014,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 20.5
+    },
+    {
+      "year": 2014,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2686.1
+    },
+    {
+      "year": 2014,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 103.0
+    },
+    {
+      "year": 2014,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2022.8
+    },
+    {
+      "year": 2014,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 31.3
+    },
+    {
+      "year": 2014,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3002.5
+    },
+    {
+      "year": 2016,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 24.9
+    },
+    {
+      "year": 2016,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 80.1
+    },
+    {
+      "year": 2016,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 42.3
+    },
+    {
+      "year": 2016,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1479.3
+    },
+    {
+      "year": 2016,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.8
+    },
+    {
+      "year": 2016,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 315.1
+    },
+    {
+      "year": 2016,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 33.2
+    },
+    {
+      "year": 2016,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1480.4
+    },
+    {
+      "year": 2016,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 326.7
+    },
+    {
+      "year": 2016,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 4958.6
+    },
+    {
+      "year": 2016,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 2.0
+    },
+    {
+      "year": 2016,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2396.5
+    },
+    {
+      "year": 2016,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 90.3
+    },
+    {
+      "year": 2016,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1936.8
+    },
+    {
+      "year": 2016,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 12.8
+    },
+    {
+      "year": 2016,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 2070.5
+    },
+    {
+      "year": 2018,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 25.4
+    },
+    {
+      "year": 2018,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 271.4
+    },
+    {
+      "year": 2018,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 14.7
+    },
+    {
+      "year": 2018,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1888.4
+    },
+    {
+      "year": 2018,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.7
+    },
+    {
+      "year": 2018,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 148.1
+    },
+    {
+      "year": 2018,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 80.3
+    },
+    {
+      "year": 2018,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1510.9
+    },
+    {
+      "year": 2018,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 277.7
+    },
+    {
+      "year": 2018,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3170.3
+    },
+    {
+      "year": 2018,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 1.1
+    },
+    {
+      "year": 2018,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1980.5
+    },
+    {
+      "year": 2018,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 118.6
+    },
+    {
+      "year": 2018,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3003.1
+    },
+    {
+      "year": 2018,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 110.9
+    },
+    {
+      "year": 2018,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1382.7
+    },
+    {
+      "year": 2020,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 25.8
+    },
+    {
+      "year": 2020,
+      "sector": "Agriculture & Fishing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 249.6
+    },
+    {
+      "year": 2020,
+      "sector": "Construction",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 19.2
+    },
+    {
+      "year": 2020,
+      "sector": "Construction",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 5259.1
+    },
+    {
+      "year": 2020,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 38.0
+    },
+    {
+      "year": 2020,
+      "sector": "Electricity & Gas",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 120.1
+    },
+    {
+      "year": 2020,
+      "sector": "Households",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 112.3
+    },
+    {
+      "year": 2020,
+      "sector": "Households",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1829.4
+    },
+    {
+      "year": 2020,
+      "sector": "Manufacturing",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 360.0
+    },
+    {
+      "year": 2020,
+      "sector": "Manufacturing",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 3261.1
+    },
+    {
+      "year": 2020,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 0.8
+    },
+    {
+      "year": 2020,
+      "sector": "Mining & Quarrying",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1516.8
+    },
+    {
+      "year": 2020,
+      "sector": "Services",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 110.9
+    },
+    {
+      "year": 2020,
+      "sector": "Services",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1249.3
+    },
+    {
+      "year": 2020,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Hazardous",
+      "waste_thousand_tonnes": 219.5
+    },
+    {
+      "year": 2020,
+      "sector": "Water & Waste Mgmt",
+      "hazardousness": "Non-Hazardous",
+      "waste_thousand_tonnes": 1818.4
+    }
+  ],
+  "treatment": [
+    {
+      "year": 2004,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 168.6
+    },
+    {
+      "year": 2004,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 37.4
+    },
+    {
+      "year": 2004,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 6404.0
+    },
+    {
+      "year": 2004,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 11617.8
+    },
+    {
+      "year": 2006,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 141.7
+    },
+    {
+      "year": 2006,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 35.2
+    },
+    {
+      "year": 2006,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 7074.0
+    },
+    {
+      "year": 2006,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 15462.4
+    },
+    {
+      "year": 2008,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 103.7
+    },
+    {
+      "year": 2008,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 20.9
+    },
+    {
+      "year": 2008,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 5662.4
+    },
+    {
+      "year": 2008,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 10415.5
+    },
+    {
+      "year": 2010,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 167.7
+    },
+    {
+      "year": 2010,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 42.8
+    },
+    {
+      "year": 2010,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 3778.7
+    },
+    {
+      "year": 2010,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 3356.4
+    },
+    {
+      "year": 2012,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 403.0
+    },
+    {
+      "year": 2012,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 13.4
+    },
+    {
+      "year": 2012,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 2820.8
+    },
+    {
+      "year": 2012,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 2811.8
+    },
+    {
+      "year": 2014,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 721.1
+    },
+    {
+      "year": 2014,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 13.1
+    },
+    {
+      "year": 2014,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 2317.7
+    },
+    {
+      "year": 2014,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 4999.2
+    },
+    {
+      "year": 2016,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 559.1
+    },
+    {
+      "year": 2016,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 7.5
+    },
+    {
+      "year": 2016,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 2930.8
+    },
+    {
+      "year": 2016,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 6677.5
+    },
+    {
+      "year": 2018,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 1206.6
+    },
+    {
+      "year": 2018,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 8.9
+    },
+    {
+      "year": 2018,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 2098.5
+    },
+    {
+      "year": 2018,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 7705.4
+    },
+    {
+      "year": 2020,
+      "treatment": "Energy Recovery (Incineration)",
+      "waste_thousand_tonnes": 1179.8
+    },
+    {
+      "year": 2020,
+      "treatment": "Incineration (No Recovery)",
+      "waste_thousand_tonnes": 9.6
+    },
+    {
+      "year": 2020,
+      "treatment": "Landfill",
+      "waste_thousand_tonnes": 2813.2
+    },
+    {
+      "year": 2020,
+      "treatment": "Recycling & Recovery",
+      "waste_thousand_tonnes": 8804.9
+    }
+  ],
+  "gap": [
+    {
+      "sector": "Construction",
+      "total": 5278.3,
+      "hazardous": 19.2,
+      "non_hazardous": 5259.1,
+      "hazardous_pct": 0.4
+    },
+    {
+      "sector": "Manufacturing",
+      "total": 3621.1,
+      "hazardous": 360.0,
+      "non_hazardous": 3261.1,
+      "hazardous_pct": 9.9
+    },
+    {
+      "sector": "Water & Waste Mgmt",
+      "total": 2037.9,
+      "hazardous": 219.5,
+      "non_hazardous": 1818.4,
+      "hazardous_pct": 10.8
+    },
+    {
+      "sector": "Households",
+      "total": 1941.7,
+      "hazardous": 112.3,
+      "non_hazardous": 1829.4,
+      "hazardous_pct": 5.8
+    },
+    {
+      "sector": "Mining & Quarrying",
+      "total": 1517.6,
+      "hazardous": 0.8,
+      "non_hazardous": 1516.8,
+      "hazardous_pct": 0.1
+    },
+    {
+      "sector": "Services",
+      "total": 1360.2,
+      "hazardous": 110.9,
+      "non_hazardous": 1249.3,
+      "hazardous_pct": 8.2
+    },
+    {
+      "sector": "Agriculture & Fishing",
+      "total": 275.4,
+      "hazardous": 25.8,
+      "non_hazardous": 249.59999999999997,
+      "hazardous_pct": 9.4
+    },
+    {
+      "sector": "Electricity & Gas",
+      "total": 158.1,
+      "hazardous": 38.0,
+      "non_hazardous": 120.1,
+      "hazardous_pct": 24.0
+    }
+  ]
+}
