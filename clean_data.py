@@ -103,32 +103,14 @@ gwa02_clean = gwa02_clean.sort_values(['year', 'treatment']).reset_index(drop=Tr
 print(f"\nGWA02 cleaned: {gwa02_clean.shape[0]} rows")
 print(gwa02_clean.to_string())
 
-# ──────────────────────────────────────────────────────────────────────────────
-# Circular Economy Gap: per sector in most recent year (2020)
-# Metric: total generated vs hazardous generated vs non-hazardous
-# ──────────────────────────────────────────────────────────────────────────────
-gap = gwa01_clean[gwa01_clean['year'] == 2020].copy()
-gap_total = gap.groupby('sector')['waste_thousand_tonnes'].sum().reset_index()
-gap_haz = gap[gap['hazardousness'] == 'Hazardous'].groupby('sector')['waste_thousand_tonnes'].sum().reset_index()
-gap_total.columns = ['sector', 'total']
-gap_haz.columns = ['sector', 'hazardous']
-gap_df = gap_total.merge(gap_haz, on='sector')
-gap_df['non_hazardous'] = gap_df['total'] - gap_df['hazardous']
-gap_df['hazardous_pct'] = ((gap_df['hazardous'] / gap_df['total']) * 100).round(1)
-gap_df = gap_df.sort_values('total', ascending=False).reset_index(drop=True)
-
-print(f"\nCircular Economy Gap (2020):")
-print(gap_df.to_string())
 
 # ── Save cleaned CSVs ──────────────────────────────────────────────────────────
 gwa01_clean.to_csv("/Users/dak/Information_Visualisation_Project/gwa01_clean.csv", index=False)
 gwa02_clean.to_csv("/Users/dak/Information_Visualisation_Project/gwa02_clean.csv", index=False)
-gap_df.to_csv("/Users/dak/Information_Visualisation_Project/gap_2020.csv", index=False)
 
 # ── Export as JSON for Vega-Lite inline use ────────────────────────────────────
 gen_json   = gwa01_clean.to_dict(orient='records')
 treat_json = gwa02_clean.to_dict(orient='records')
-gap_json   = gap_df.to_dict(orient='records')
 
 with open("/Users/dak/Information_Visualisation_Project/data.json", "w") as f:
     json.dump({"generation": gen_json, "treatment": treat_json, "gap": gap_json}, f, indent=2)
@@ -136,4 +118,3 @@ with open("/Users/dak/Information_Visualisation_Project/data.json", "w") as f:
 print("\n✅ All files saved.")
 print(f"   gwa01_clean.csv  → {len(gen_json)} rows")
 print(f"   gwa02_clean.csv  → {len(treat_json)} rows")
-print(f"   gap_2020.csv     → {len(gap_json)} rows")
