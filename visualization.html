@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.1.0"></script>
+</head>
+<body>
+  <div id="vis"/>
+  <script>
+    const spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Is Ireland's Waste Problem Getting Better — Or Just Better Hidden?",
+    "subtitle": "CSO High Value Datasets GWA01 & GWA02 · 2004–2020 · Click bars to highlight sector · Double-click to reset",
+    "fontSize": 22,
+    "subtitleFontSize": 13,
+    "color": "#111",
+    "subtitleColor": "#666",
+    "anchor": "middle",
+    "offset": 20
+  },
+  "background": "white",
+  "config": {
+    "background": "white",
+    "font": "sans-serif",
+    "title": {
+      "fontWeight": "bold",
+      "fontSize": 13,
+      "subtitleFontSize": 10,
+      "subtitleColor": "#888",
+      "color": "#222",
+      "anchor": "start"
+    },
+    "axis": {
+      "labelColor": "#555",
+      "titleColor": "#333",
+      "titleFontWeight": "normal",
+      "gridColor": "#efefef",
+      "domainColor": "#ccc",
+      "tickColor": "#ccc",
+      "labelFontSize": 11,
+      "titleFontSize": 11
+    },
+    "legend": {"labelColor": "#333", "titleColor": "#555", "labelFontSize": 11},
+    "view": {"stroke": "transparent"},
+    "concat": {"spacing": 20}
+  },
+  "params": [
+    {
+      "name": "yearSel",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2020,
+        "step": 2,
+        "name": "Chart 1 Year: "
+      }
+    },
+    {
+      "name": "sectorSel",
+      "value": null,
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Agriculture & Fishing",
+          "Mining & Quarrying",
+          "Manufacturing",
+          "Electricity & Gas",
+          "Water & Waste Mgmt",
+          "Construction",
+          "Services",
+          "Households"
+        ],
+        "labels": [
+          "All Sectors",
+          "Agriculture & Fishing",
+          "Mining & Quarrying",
+          "Manufacturing",
+          "Electricity & Gas",
+          "Water & Waste Mgmt",
+          "Construction",
+          "Services",
+          "Households"
+        ],
+        "name": "Highlight Sector: "
+      }
+    }
+  ],
+  "resolve": {
+    "legend": {"color": "independent"},
+    "selection": {"hl": "global"}
+  },
+  "vconcat": [
+    {
+      "title": {
+        "text": {"expr": "'Waste Generation by Sector & Type — ' + yearSel"},
+        "subtitle": "Stacked hazardous (red) / non-hazardous (green) · Click a bar to highlight sector across all charts"
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/divya1999ann/information_Visualisation_Project/main/gwa01_clean.csv",
+        "format": {"type": "csv"}
+      },
+      "width": 500,
+      "height": 280,
+      "params": [
+        {
+          "name": "hl",
+          "select": {
+            "type": "point",
+            "fields": ["sector"],
+            "on": "click",
+            "clear": "dblclick"
+          }
+        }
+      ],
+      "transform": [{"filter": "datum.year == yearSel"}],
+      "mark": {"type": "bar", "cursor": "pointer"},
+      "encoding": {
+        "x": {
+          "field": "sector",
+          "type": "nominal",
+          "sort": {
+            "op": "sum",
+            "field": "waste_thousand_tonnes",
+            "order": "descending"
+          },
+          "axis": {"title": null, "labelAngle": -35}
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "waste_thousand_tonnes",
+          "type": "quantitative",
+          "axis": {"title": "Waste (000 tonnes)", "format": ",.0f"}
+        },
+        "color": {
+          "field": "hazardousness",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Hazardous", "Non-Hazardous"],
+            "range": ["#e53935", "#43a047"]
+          },
+          "legend": {
+            "title": "Waste Type",
+            "orient": "top",
+            "symbolType": "square",
+            "direction": "horizontal"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sector === sectorSel",
+            "value": 1
+          },
+          "value": 0.07
+        },
+        "tooltip": [
+          {"field": "sector", "type": "nominal", "title": "Sector"},
+          {"field": "hazardousness", "type": "nominal", "title": "Type"},
+          {
+            "aggregate": "sum",
+            "field": "waste_thousand_tonnes",
+            "type": "quantitative",
+            "title": "Waste (000t)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Total Waste vs Hazardous Concentration",
+        "subtitle": "Each point = sector × year · Size = hazardous volume · Log scale x-axis"
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/divya1999ann/information_Visualisation_Project/main/gwa01_clean.csv",
+        "format": {"type": "csv"}
+      },
+      "width": 500,
+      "height": 280,
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "waste_thousand_tonnes", "as": "tw"}
+          ],
+          "groupby": ["sector", "year", "hazardousness"]
+        },
+        {
+          "pivot": "hazardousness",
+          "value": "tw",
+          "groupby": ["sector", "year"]
+        },
+        {
+          "calculate": "datum.Hazardous + datum['Non-Hazardous']",
+          "as": "total"
+        },
+        {
+          "calculate": "datum.total > 0 ? datum.Hazardous / datum.total * 100 : 0",
+          "as": "haz_pct"
+        },
+        {"filter": "datum.total > 0"},
+        {"calculate": "datum.sector", "as": "sectorName"}
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "stroke": "white",
+        "strokeWidth": 0.4,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "total",
+          "type": "quantitative",
+          "scale": {"type": "log"},
+          "axis": {"title": "Total Waste (000t, log scale)", "format": ",.0f"}
+        },
+        "y": {
+          "field": "haz_pct",
+          "type": "quantitative",
+          "axis": {"title": "Hazardous Waste (%)", "format": ".0f"}
+        },
+        "color": {
+          "field": "sectorName",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Agriculture & Fishing",
+              "Mining & Quarrying",
+              "Manufacturing",
+              "Electricity & Gas",
+              "Water & Waste Mgmt",
+              "Construction",
+              "Services",
+              "Households"
+            ],
+            "range": [
+              "#4caf50",
+              "#ff9800",
+              "#f44336",
+              "#2196f3",
+              "#00bcd4",
+              "#9c27b0",
+              "#ff5722",
+              "#795548"
+            ]
+          },
+          "legend": {
+            "title": "Sector",
+            "orient": "right",
+            "symbolType": "circle"
+          }
+        },
+        "size": {
+          "field": "Hazardous",
+          "type": "quantitative",
+          "scale": {"range": [30, 500]},
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sectorName === sectorSel",
+            "value": 0.9
+          },
+          "value": 0.05
+        },
+        "tooltip": [
+          {"field": "sectorName", "type": "nominal", "title": "Sector"},
+          {"field": "year", "type": "ordinal", "title": "Year"},
+          {
+            "field": "total",
+            "type": "quantitative",
+            "title": "Total (000t)",
+            "format": ",.1f"
+          },
+          {
+            "field": "haz_pct",
+            "type": "quantitative",
+            "title": "Hazardous %",
+            "format": ".1f"
+          },
+          {
+            "field": "Hazardous",
+            "type": "quantitative",
+            "title": "Hazardous (000t)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Waste Treatment Methods Over Time",
+        "subtitle": "Drag to brush year range · Landfill −56% since 2004 · Energy recovery incineration +601%"
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/divya1999ann/information_Visualisation_Project/main/gwa02_clean.csv",
+        "format": {"type": "csv"}
+      },
+      "width": 500,
+      "height": 260,
+      "params": [
+        {
+          "name": "yearBrush",
+          "select": {"type": "interval", "encodings": ["x"]}
+        }
+      ],
+      "mark": {"type": "area", "line": {"strokeWidth": 1.5}},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {"title": "Year", "labelAngle": 0}
+        },
+        "y": {
+          "field": "waste_thousand_tonnes",
+          "type": "quantitative",
+          "stack": "normalize",
+          "axis": {"title": "Share of Treatment", "format": ".0%"}
+        },
+        "color": {
+          "field": "treatment",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Recycling & Recovery",
+              "Energy Recovery (Incineration)",
+              "Landfill",
+              "Incineration (No Recovery)"
+            ],
+            "range": ["#2e7d32", "#e53935", "#f9a825", "#9e9e9e"]
+          },
+          "legend": {
+            "title": "Treatment",
+            "orient": "right",
+            "symbolType": "square"
+          }
+        },
+        "opacity": {
+          "condition": {"param": "yearBrush", "value": 1},
+          "value": 0.3
+        },
+        "tooltip": [
+          {"field": "year", "type": "ordinal", "title": "Year"},
+          {"field": "treatment", "type": "nominal", "title": "Method"},
+          {
+            "field": "waste_thousand_tonnes",
+            "type": "quantitative",
+            "title": "Waste (000t)",
+            "format": ",.1f"
+          }
+        ]
+      }
+    },
+    {
+      "title": {
+        "text": "Year-on-Year % Change in Waste by Sector",
+        "subtitle": "Blue = decreased · Red = increased · 2008 crash visible as blue in Construction & Mining"
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/divya1999ann/information_Visualisation_Project/main/gwa01_clean.csv",
+        "format": {"type": "csv"}
+      },
+      "width": 500,
+      "height": 260,
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "waste_thousand_tonnes", "as": "tw"}
+          ],
+          "groupby": ["year", "sector"]
+        },
+        {
+          "window": [{"op": "lag", "field": "tw", "as": "prev", "param": 1}],
+          "groupby": ["sector"],
+          "sort": [{"field": "year", "order": "ascending"}]
+        },
+        {"filter": "datum.prev != null && datum.prev > 50"},
+        {"filter": "datum.tw > 0 && datum.tw < datum.prev * 10"},
+        {
+          "calculate": "((datum.tw - datum.prev) / datum.prev) * 100",
+          "as": "pct"
+        },
+        {
+          "calculate": "datum.pct > 80 ? 80 : datum.pct < -80 ? -80 : datum.pct",
+          "as": "pct_c"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rect", "cursor": "pointer"},
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal",
+              "axis": {"title": "Year", "labelAngle": 0}
+            },
+            "y": {
+              "field": "sector",
+              "type": "nominal",
+              "sort": [
+                "Agriculture & Fishing",
+                "Mining & Quarrying",
+                "Manufacturing",
+                "Electricity & Gas",
+                "Water & Waste Mgmt",
+                "Construction",
+                "Services",
+                "Households"
+              ],
+              "axis": {"title": null, "labelFontSize": 11}
+            },
+            "color": {
+              "field": "pct_c",
+              "type": "quantitative",
+              "scale": {
+                "scheme": "redblue",
+                "domainMid": 0,
+                "domain": [-80, 80]
+              },
+              "legend": {
+                "title": "% Change",
+                "orient": "right",
+                "gradientLength": 130
+              }
+            },
+            "opacity": {
+              "condition": {
+                "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sector === sectorSel",
+                "value": 1
+              },
+              "value": 0.1
+            },
+            "tooltip": [
+              {"field": "sector", "type": "nominal", "title": "Sector"},
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {
+                "field": "pct",
+                "type": "quantitative",
+                "title": "% Change",
+                "format": ".1f"
+              },
+              {
+                "field": "tw",
+                "type": "quantitative",
+                "title": "Total (000t)",
+                "format": ",.1f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {"type": "text", "fontSize": 9},
+          "encoding": {
+            "x": {"field": "year", "type": "ordinal"},
+            "y": {
+              "field": "sector",
+              "type": "nominal",
+              "sort": [
+                "Agriculture & Fishing",
+                "Mining & Quarrying",
+                "Manufacturing",
+                "Electricity & Gas",
+                "Water & Waste Mgmt",
+                "Construction",
+                "Services",
+                "Households"
+              ]
+            },
+            "text": {"field": "pct", "type": "quantitative", "format": ".0f"},
+            "color": {
+              "condition": {"test": "abs(datum.pct_c) > 60", "value": "white"},
+              "value": "#333"
+            },
+            "opacity": {
+              "condition": {
+                "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sector === sectorSel",
+                "value": 1
+              },
+              "value": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Hazardous Waste Trend by Sector (2004–2020)",
+        "subtitle": "Dashed line = sector average · Use dropdown to highlight · Manufacturing dominates but declining"
+      },
+      "data": {
+        "url": "https://raw.githubusercontent.com/divya1999ann/information_Visualisation_Project/main/gwa01_clean.csv",
+        "format": {"type": "csv"}
+      },
+      "width": 900,
+      "height": 240,
+      "transform": [
+        {"filter": "datum.hazardousness == 'Hazardous'"},
+        {"calculate": "datum.sector", "as": "sectorName"}
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2,
+            "point": {"filled": true, "size": 45},
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal",
+              "axis": {"title": "Year", "labelAngle": 0}
+            },
+            "y": {
+              "field": "waste_thousand_tonnes",
+              "type": "quantitative",
+              "axis": {
+                "title": "Hazardous Waste (000 tonnes)",
+                "format": ",.0f"
+              }
+            },
+            "color": {
+              "field": "sectorName",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Agriculture & Fishing",
+                  "Mining & Quarrying",
+                  "Manufacturing",
+                  "Electricity & Gas",
+                  "Water & Waste Mgmt",
+                  "Construction",
+                  "Services",
+                  "Households"
+                ],
+                "range": [
+                  "#4caf50",
+                  "#ff9800",
+                  "#f44336",
+                  "#2196f3",
+                  "#00bcd4",
+                  "#9c27b0",
+                  "#ff5722",
+                  "#795548"
+                ]
+              },
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sectorName === sectorSel",
+                "value": 1
+              },
+              "value": 0.04
+            },
+            "strokeWidth": {
+              "condition": {
+                "test": "(!length(data('hl_store')) && sectorSel === null) || vlSelectionTest('hl_store', datum) || datum.sectorName === sectorSel",
+                "value": 3
+              },
+              "value": 0.5
+            },
+            "tooltip": [
+              {"field": "sectorName", "type": "nominal", "title": "Sector"},
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {
+                "field": "waste_thousand_tonnes",
+                "type": "quantitative",
+                "title": "Hazardous (000t)",
+                "format": ",.1f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2.5,
+            "strokeDash": [6, 3],
+            "color": "#c62828"
+          },
+          "encoding": {
+            "x": {"field": "year", "type": "ordinal"},
+            "y": {
+              "aggregate": "mean",
+              "field": "waste_thousand_tonnes",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {"field": "year", "type": "ordinal", "title": "Year"},
+              {
+                "aggregate": "mean",
+                "field": "waste_thousand_tonnes",
+                "type": "quantitative",
+                "title": "Avg (000t)",
+                "format": ",.1f"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+};
+    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+  </script>
+</body>
+</html>
